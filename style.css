@@ -5,7 +5,12 @@
 }
 
 body {
-  background-color:#fafafa;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -14,7 +19,7 @@ body {
   align-items: center;
 
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
 }
 
 .instagram-phones {
@@ -26,12 +31,12 @@ body {
 
 .instagram-phones .white-phone {
   position: relative;
-  left: -435px;
+  left: -655px;
   top: 50px;
-  z-index: 1;
+  z-index: 3;
 
-  width: 250px;
-  height: 480px;
+  width: 270px;
+  height: 500px;
 }
 
 .instagram-phones .black-phone {
@@ -40,8 +45,21 @@ body {
   top: 0px;
   z-index: 0;
 
-  height: 540px;
-  width: 585px;
+  height: 560px;
+  width: 625px;
+}
+
+.black-phone-image {
+  height: 480px;
+  position: relative;
+  left: -493px;
+  top: 80px;
+
+  width: 220px;
+  height: 390px;
+  z-index: 1;
+
+  border-radius: 2px;
 }
 
 .login-section {
@@ -57,7 +75,7 @@ body {
 .login-main-content,
 .sign-up-link {
   background-color: white;
-  border: 1px solid rgba(219,219,219,1);
+  border: 1px solid rgba(219, 219, 219, 1);
 }
 
 .login-main-content {
@@ -81,7 +99,7 @@ body {
 }
 
 .login-main-content button {
-  background-color: rgba(0,149,246,.3);
+  background-color: rgba(0, 149, 246, 0.3);
   border: 1px solid transparent;
   border-radius: 3px;
   color: #fff;
@@ -90,28 +108,14 @@ body {
   height: 30px;
 }
 
-.sign-up-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 63px;
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-.sign-up-link a {
-  text-decoration: none;
-  color: #0095f6;
-}
-
-
 .title img {
-  margin-top:22px;
+  margin-top: 22px;
 }
 
 .login-inputs-wrapper {
   width: 100%;
-  margin: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
 .separation-container {
@@ -124,6 +128,101 @@ body {
 
 .separation-container hr {
   width: 105px;
-  height: 0;
+  height: 1px;
   margin: 0 19px;
+  border: 0;
+
+  background-color: #dbdbdb;
+}
+
+.separation-container span {
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-with-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-with-facebook svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.login-with-facebook p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #385185;
+}
+
+.forgotten-password {
+  color: #00376b;
+  margin: 12px 0 0;
+  font-size: 12px;
+}
+
+.sign-up-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 63px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+}
+.sign-up-link a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.login-section > p {
+  font-size: 14px;
+  margin: 20px 20px 10px;
+}
+
+.app-store-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.app-store-buttons img {
+  width: 134.28px;
+  height: 40px;
+  margin: 10px 5px;
+}
+
+footer {
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
+  color: #8e8e8e;
+  font-weight: 400;
+  text-align: center;
+}
+
+.first-links-wrapper a,
+.second-links-wrapper a{
+  display: inline-block;
+  margin: 0 6px 12px;
+  cursor: pointer;
+}
+
+.language-select select {
+  border: 0;
+  background-color: #fafafa;
+  color: #8e8e8e;
+  width: 80px;
+  margin: 10px 10px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.language-select select:focus {
+  outline-style: none;
 }
