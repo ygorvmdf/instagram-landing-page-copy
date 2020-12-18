@@ -33,17 +33,33 @@ a {
   position: relative;
   left: -655px;
   top: 50px;
-  z-index: 3;
 
   width: 270px;
   height: 500px;
+}
+
+.white-phone-images {
+  border: 2px solid #000;
+
+  position: relative;
+  left: -900px;
+  top: 110px;
+
+  width: 300px;
+  height: 375px;
+
+  transition: ease all 1s;
+}
+
+.white-phone-images img {
+  width: 225px;
+  height: 371px;
 }
 
 .instagram-phones .black-phone {
   position: relative;
   left: -140px;
   top: 0px;
-  z-index: 0;
 
   height: 560px;
   width: 625px;
@@ -57,7 +73,6 @@ a {
 
   width: 220px;
   height: 390px;
-  z-index: 1;
 
   border-radius: 2px;
 }
@@ -225,4 +240,12 @@ footer {
 
 .language-select select:focus {
   outline-style: none;
+}
+
+.apresentation-image {
+  display: none;
+}
+
+.selected {
+  display: block;
 }
