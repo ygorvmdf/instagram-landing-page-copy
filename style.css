@@ -249,3 +249,9 @@ footer {
 .selected {
   display: block;
 }
+
+@media (max-width: 876px) {
+  .instagram-phones {
+    display: none;
+  }
+}
