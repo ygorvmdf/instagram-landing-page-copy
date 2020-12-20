@@ -1,5 +1,5 @@
+const imagesList = Array.from(document.getElementsByClassName('apresentation-image'));
 const changeImageClass = () => {
-  const imagesList = Array.from(document.getElementsByClassName('apresentation-image'));
   const selectedImage = imagesList.find(image => image.className.includes('selected'));
   const nextImage = selectedImage.nextElementSibling;
   selectedImage.classList.remove('selected');
