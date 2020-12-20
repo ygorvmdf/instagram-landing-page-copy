@@ -1,19 +1,16 @@
 const changeImageClass = () => {
-  var interval = setInterval(frame(), 3000);
+  const imagesList = Array.from(document.getElementsByClassName('apresentation-image'));
+  const selectedImage = imagesList.find(image => image.className.includes('selected'));
+  const nextImage = selectedImage.nextElementSibling;
+  selectedImage.classList.remove('selected');
 
-  function frame() {
-
-    const imagesList = document.getElementsByClassName('apresentation-image');
-    for (let image of imagesList) {
-      const imageClasses = Object.values(image.classList);
-      if (imageClasses.includes('selected')) {
-        const nextImage = image.nextElementSibling;
-        image.classList.remove('selected');
-        nextImage.classList.add('selected');
-        return;
-      }
-    }
+  if (nextImage) {
+    nextImage.classList.add('selected');
+  } else {
+    selectedImage.parentElement.firstElementChild.classList.add('selected');
   }
 }
 
+
+const interval = setInterval(changeImageClass, 3000);
 changeImageClass();
